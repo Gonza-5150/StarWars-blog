@@ -23,36 +23,22 @@ const getState = ({ getStore, getActions, setStore }) => {
           .then((data) => {
             return data;
           })
-          .then(async (data) => {
-            data.results.forEach(async (planet, index) => {
-              // console.log(character.url);
-              const { url } = planet;
-              const response = await fetch(url);
-              const info = await response.json();
-              data.results[index].info = info;
-              setStore({ planet: data });
-            });
-          })
-          .catch((error) => console.log("Error en la solicitud de planetas"));
-      },
+          .then( (data) => {
+            setStore({ planets: data.results });
+        })
+        .catch((error) => console.log("Error en la solicitud de planetas"));
+    },
       fetchVehicles: () => {
         fetch("https://www.swapi.tech/api/vehicles/")
           .then((response) => response.json())
           .then((data) => {
             return data;
           })
-          .then(async (data) => {
-            data.results.forEach(async (Vehicle, index) => {
-              // console.log(character.url);
-              const { url } = Vehicle;
-              const response = await fetch(url);
-              const info = await response.json();
-              data.results[index].info = info;
-              setStore({ Vehicle: data });
-            });
-          })
-          .catch((error) => console.log("Error en la solicitud de vehículo"));
-      },
+          .then( (data) => {
+            setStore({ vehicles: data.results });
+        })
+        .catch((error) => console.log("Error en la solicitud de vehiculos"));
+    },
     },
   };
 };

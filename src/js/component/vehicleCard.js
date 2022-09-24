@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import getState from "../store/flux";
-import { Context } from "../store/appContext";
 
-export const Card = ({name}) => {
+export const VehicleCard = ({name}) => {
   return (
     <div className="card col-3 mx-1 bg-secondary">
       <img
-        src="https://www.alohacriticon.com/wp-content/uploads/2017/08/obi-wan-kenobi-pelicula-foto.jpg"
+        src="https://pm1.narvii.com/6177/088da41c754f2a4984a41684ae213f6531aaffa9_hq.jpg"
         className="card-img-top"
         alt="..."
       />
