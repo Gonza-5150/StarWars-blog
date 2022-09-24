@@ -1,23 +1,26 @@
-import React from "react";
 import "../../styles/home.css";
 import { Card } from "../component/card";
 import { PlanetCard } from "../component/planetCard";
-import { SingleCard } from "../component/singleCard";
+import { characterCard } from "../component/characterCard";
+import React, { useState, useEffect, useContext } from "react";
+import { Context } from "../store/appContext";
 
 export const Home = () => {
+  const { store, actions } = useContext(Context);
+  console.log(store.characters);
+  useEffect(() => {
+    actions.fetchCharacters();
+  }, []);
   return (
     <div className="bg-secondary ">
       <div>
         <h1>Personaje</h1>
         <div className="d-flex overflow-scroll">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          { store.characters.map((element, index)=>{
+            return (
+              <Card name={element.name} />
+            )
+          })}
         </div>
       </div>
       <div className="mt-">
@@ -32,9 +35,6 @@ export const Home = () => {
           <PlanetCard />
           <PlanetCard />
         </div>
-		<div>
-			<SingleCard />
-		</div>
       </div>
     </div>
   );

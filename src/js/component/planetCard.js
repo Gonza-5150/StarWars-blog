@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { useState, useEffect } from "react";
+
 
 export const PlanetCard = () => {
   return (
@@ -22,3 +24,5 @@ export const PlanetCard = () => {
       </div>
   );
 };
+
+ 
