@@ -4,14 +4,14 @@ import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 import "../../styles/demo.css";
-import { PlanetCard } from "../component/planetCard";
+import { VehicleCard } from "../component/vehicleCard";
 
-export const Planets = () => {
+export const Vehicles = () => {
 	const { store, actions } = useContext(Context);
     const params = useParams();
 	return (
         <div>
-            <PlanetCard/>
+            <VehicleCard/>
         </div>
 	);
 };

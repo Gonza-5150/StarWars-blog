@@ -47,7 +47,7 @@ export const Home = () => {
         <div className="d-flex overflow-scroll">
         { store.vehicles.map((element, index)=>{
             return (
-              <VehicleCard name={element.name} />
+              <VehicleCard name={element.name}/>
             )
           })}
         </div>
