@@ -27,7 +27,7 @@ export const Home = () => {
         <div className="d-flex overflow-scroll">
           { store.characters.map((element)=>{
             return (
-              <Card name={element.name} />
+              <Card name={element.name} uid={element.uid} />
             )
           })}
         </div>
@@ -37,7 +37,7 @@ export const Home = () => {
         <div className="d-flex overflow-scroll">
         { store.planets.map((element, index)=>{
             return (
-              <PlanetCard name={element.name} />
+              <PlanetCard name={element.name} url={element.url} uid={element.uid} />
             )
           })}
         </div>
@@ -47,7 +47,7 @@ export const Home = () => {
         <div className="d-flex overflow-scroll">
         { store.vehicles.map((element, index)=>{
             return (
-              <VehicleCard name={element.name}/>
+              <VehicleCard name={element.name} uid={element.uid}/>
             )
           })}
         </div>

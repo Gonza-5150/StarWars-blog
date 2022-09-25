@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import getState from "../store/flux";
 
-export const VehicleCard = ({name}) => {
+export const VehicleCard = ({name, uid}) => {
   return (
     <div className="card col-3 mx-1 bg-secondary shadow-lg">
       <img
-        src="https://pm1.narvii.com/6177/088da41c754f2a4984a41684ae213f6531aaffa9_hq.jpg"
+        src={`https://starwars-visualguide.com/assets/img/vehicles/${uid}.jpg`}
         className="card-img-top"
         alt="..."
       />
