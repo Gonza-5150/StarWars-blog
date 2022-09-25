@@ -16,7 +16,7 @@ export const Card = ({name, uid}) => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </p>
-        <a href="#" className="btn btn-info opacity-50">
+        <a href={`/character/${uid}`} className="btn btn-info opacity-50">
           Mas información
         </a>
       </div>

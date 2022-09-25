@@ -18,7 +18,7 @@ export const PlanetCard = ({name,url, uid}) => {
             Some quick example text to build on the card title and make up the
             bulk of the card's content. {url}
           </p>
-          <a href="#" className="btn btn-info opacity-50">
+          <a href={`/planets/${uid}`} className="btn btn-info opacity-50">
             Go somewhere
           </a>
         </div>

@@ -23,7 +23,7 @@ export const Home = () => {
   return (
     <div className="bg-dark shadow ">
       <div>
-        <h1 className="text-secondary">Personaje</h1>
+        <h1 className="text-secondary">Personajes</h1>
         <div className="d-flex overflow-scroll">
           { store.characters.map((element)=>{
             return (
@@ -47,7 +47,7 @@ export const Home = () => {
         <div className="d-flex overflow-scroll">
         { store.vehicles.map((element, index)=>{
             return (
-              <VehicleCard name={element.name} uid={element.uid}/>
+              <VehicleCard name={element.name} uid={element.uid} model={element.model} length={element.model} clas={element.clas}/>
             )
           })}
         </div>
