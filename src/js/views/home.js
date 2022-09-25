@@ -21,9 +21,9 @@ export const Home = () => {
     actions.fetchVehicles();
   }, []);
   return (
-    <div className="bg-secondary ">
+    <div className="bg-dark shadow ">
       <div>
-        <h1>Personaje</h1>
+        <h1 className="text-secondary">Personaje</h1>
         <div className="d-flex overflow-scroll">
           { store.characters.map((element)=>{
             return (
@@ -32,8 +32,8 @@ export const Home = () => {
           })}
         </div>
       </div>
-      <div className="mt-">
-        <h1>Planetas</h1>
+      <div className="mt- shadow">
+        <h1 className="text-secondary">Planetas</h1>
         <div className="d-flex overflow-scroll">
         { store.planets.map((element, index)=>{
             return (
@@ -43,7 +43,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="mt-">
-        <h1>Vehiculos</h1>
+        <h1 className="text-secondary">Vehiculos</h1>
         <div className="d-flex overflow-scroll">
         { store.vehicles.map((element, index)=>{
             return (
