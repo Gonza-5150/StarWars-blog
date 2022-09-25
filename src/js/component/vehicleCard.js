@@ -3,7 +3,7 @@ import getState from "../store/flux";
 
 export const VehicleCard = ({name, uid, model, length, clas}) => {
   return (
-    <div className="card col-3 mx-1 bg-secondary shadow-lg">
+    <div className="card col-3 border-warning mx-1 bg-secondary shadow-lg">
       <img
         src={`https://starwars-visualguide.com/assets/img/vehicles/${uid}.jpg`}
         className="card-img-top"
@@ -20,7 +20,7 @@ export const VehicleCard = ({name, uid, model, length, clas}) => {
                 <p className="card-text newFont">
                   <b>Class:</b> {clas}
                 </p>
-        <a href={`/vehicles/${uid}`} className="btn btn-info opacity-50">
+        <a href={`/vehicles/${uid}`} className="btn btn-info opacity-50 border-warning">
           Mas info
         </a>
       </div>
