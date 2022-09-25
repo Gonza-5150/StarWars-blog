@@ -14,11 +14,11 @@ export const Navbar = () => {
         </span> 
       </Link>
 
-      <Link className="nav-link link-dark shadow-lg  rounded " to="/characters">Personajes</Link>
+      <Link className="btn border-dark nav-link link-dark shadow-lg  rounded " to="/characters">Personajes</Link>
 
-      <Link className="nav-link link-dark shadow-lg rounded" to="/planets">Planetas</Link>
+      <Link className="btn border-dark nav-link link-dark shadow-lg rounded" to="/planets">Planetas</Link>
 
-      <Link className="nav-link link-dark shadow-lg rounded" to="/vehicles">Vehiculos</Link>
+      <Link className="btn border-dark nav-link link-dark shadow-lg rounded" to="/vehicles">Vehiculos</Link>
 
       <div className="dropdown ">
         <button
