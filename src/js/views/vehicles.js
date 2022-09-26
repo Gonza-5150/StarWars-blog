@@ -29,7 +29,7 @@ export const Vehicles = () => {
           <p className="card-text newFont">
           <ul>
               <li> Fabricante: {store.vehicleEach?.manufacturer} </li>
-              <li> Tripulación: {store.vehicelEach?.crew} </li>
+              <li> Tripulación: {store.vehicleEach?.crew} </li>
               <li>Velocidad: {store.vehicleEach?.max_atmosphering_speed}</li>
               <li>Pasajeros: {store.vehicleEach?.passengers}</li>
             </ul>
