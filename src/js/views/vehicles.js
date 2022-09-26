@@ -17,8 +17,8 @@ export const Vehicles = () => {
   console.log(store.vehicleEach);
 
   return (
-    <div>
-      <div className="card col-3 border-warning mx-1 bg-secondary shadow-lg">
+    <div class="d-flex justify-content-center bg-dark">
+      <div className="card col-4 border-warning mx-1 bg-secondary shadow-lg">
         <img
           src={`https://starwars-visualguide.com/assets/img/vehicles/${params.theid}.jpg`}
           className="card-img-top"
@@ -27,10 +27,12 @@ export const Vehicles = () => {
         <div className="card-body">
           <h5 className="card-title">{store.vehicleEach?.name}</h5>
           <p className="card-text newFont">
-            <b>Model:{store.vehicleEach?.model}</b>
-          </p>
-          <p className="card-text newFont">
-            <b>Length:{store.vehicleEach?.length}</b>
+          <ul>
+              <li> Fabricante: {store.vehicleEach?.manufacturer} </li>
+              <li> Tripulación: {store.vehicelEach?.crew} </li>
+              <li>Velocidad: {store.vehicleEach?.max_atmosphering_speed}</li>
+              <li>Pasajeros: {store.vehicleEach?.passengers}</li>
+            </ul>
           </p>
           
           

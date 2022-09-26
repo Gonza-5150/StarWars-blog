@@ -17,7 +17,7 @@ export const Character = () => {
   console.log(store.characterEach)
 
   return (
-    <div>
+    <div class="d-flex justify-content-center bg-dark">
       <div className="card col-4 mx-1 border-warning bg-secondary shadow-lg">
         <img
           src={`https://starwars-visualguide.com/assets/img/characters/${params.theid}}.jpg`}
