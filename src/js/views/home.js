@@ -25,7 +25,7 @@ export const Home = () => {
       <div>
         <h1 className="text-secondary">Personajes</h1>
         <div className="d-flex overflow-scroll">
-          { store.characters.map((element)=>{
+          { store.characters.map((element, index)=>{
             return (
               <Card name={element.name} uid={element.uid} gender={element.gender} />
             )
@@ -47,7 +47,7 @@ export const Home = () => {
         <div className="d-flex overflow-scroll">
         { store.vehicles.map((element, index)=>{
             return (
-              <VehicleCard name={element.name} uid={element.uid} model={element.model} length={element.model} clas={element.clas}/>
+              <VehicleCard name={element.name} uid={element.uid} model={element.model} length={element.length} clas={element.clas}/>
             )
           })}
         </div>

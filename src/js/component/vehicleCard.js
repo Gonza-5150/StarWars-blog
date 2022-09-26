@@ -12,13 +12,13 @@ export const VehicleCard = ({name, uid, model, length, clas}) => {
       <div className="card-body">
         <h5 className="card-title">{name}</h5>
         <p className="card-text newFont">
-                  <b>Model:</b> {model}
+                  <b>Model:{model}</b> 
                 </p>
                 <p className="card-text newFont">
-                  <b>Length:</b> {length}
+                  <b>Length:{length}</b> 
                 </p>
                 <p className="card-text newFont">
-                  <b>Class:</b> {clas}
+                  <b>Class:{clas}</b> 
                 </p>
         <a href={`/vehicles/${uid}`} className="btn btn-info opacity-50 border-warning">
           Mas info
