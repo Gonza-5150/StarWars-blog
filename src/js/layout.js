@@ -10,6 +10,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Planets } from "./views/planets";
 import { Vehicles } from "./views/vehicles";
+import { element } from "prop-types";
 
 //create your first component
 const Layout = () => {
@@ -30,7 +31,7 @@ const Layout = () => {
 							<Demo />
 						</Route>
 						<Route exact path="/character/:theid">
-							<Character/>
+							<Character />
 						</Route>
 						<Route exact path="/planets/:theid">
 							<Planets/>

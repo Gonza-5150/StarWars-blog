@@ -40,6 +40,34 @@ const getState = ({ getStore, getActions, setStore }) => {
         })
         .catch((error) => console.log("Error en la solicitud de vehiculos"));
     },
+
+    eachPlanet: (uid) => {
+      fetch("https://www.swapi.tech/api/planets/" + uid)
+        .then((resp) => resp.json())
+        .then((resp) =>
+          setStore({ planetEach: resp.result.properties })
+        )
+        .catch((err) => console.error(err));
+    },
+
+    eachCharacter: (uid) => {
+      fetch("https://www.swapi.tech/api/people/" + uid)
+        .then((resp) => resp.json())
+        .then((resp) =>
+          setStore({ characterEach: resp.result.properties })
+        )
+        .catch((err) => console.error(err));
+    },
+
+    eachVehicle: (uid) => {
+      fetch("https://www.swapi.tech/api/vehicles/" + uid)
+        .then((resp) => resp.json())
+        .then((resp) =>
+          setStore({ vehicleEach: resp.result.properties })
+        )
+        .catch((err) => console.error(err));
+    },
+
     },
   };
 };

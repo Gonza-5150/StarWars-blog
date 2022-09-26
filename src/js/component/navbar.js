@@ -22,7 +22,7 @@ export const Navbar = () => {
 
       <div className="dropdown ">
         <button
-          className="btn btn-primary border-warning dropdown-toggle opacity-50"
+          className="btn btn-primary border-warning dropdown-toggle m-3 opacity-50"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
