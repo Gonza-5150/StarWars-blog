@@ -1,7 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, useContext } from "react";
 import getState from "../store/flux";
+import { Context } from "../store/appContext";
 
 export const VehicleCard = ({ name, uid }) => {
+  const { store, actions } = useContext(Context);
   return (
     <div className="card col-3 border-warning mx-1 bg-secondary shadow-lg">
       <img
@@ -18,6 +20,7 @@ export const VehicleCard = ({ name, uid }) => {
         >
           Mas información
         </a>
+        <button className="btn btn-warning" type="button" onClick={()=>actions.addFav({id:uid, name:name})}>add</button>
       </div>
     </div>
   );

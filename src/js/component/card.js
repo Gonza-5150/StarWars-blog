@@ -20,7 +20,7 @@ export const Card = ({ name, uid, json }) => {
         >
           Mas información
         </a>
-        <button type="button" onClick={()=>actions.addFav({id:uid, name:name})}>add</button>
+        <button className="btn btn-warning" type="button" onClick={()=>actions.addFav({id:uid, name:name})}>add</button>
       </div>
     </div>
   );
