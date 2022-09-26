@@ -8,7 +8,7 @@ import { VehicleCard } from "../component/vehicleCard";
 
 export const Home = () => {
   const { store, actions } = useContext(Context);
-  console.log(store.characters);
+  console.log(store.favorites);
   useEffect(() => {
     actions.fetchCharacters();
   }, []);
@@ -21,7 +21,7 @@ export const Home = () => {
     actions.fetchVehicles();
   }, []);
   return (
-    <div className="bg-dark shadow ">
+    <div className="bg-dark shadow">
       <div>
         <h1 className="text-secondary">Personajes</h1>
         <div className="d-flex overflow-scroll">
@@ -42,7 +42,7 @@ export const Home = () => {
           })}
         </div>
       </div>
-      <div className="mt-">
+      <div className="shadow">
         <h1 className="text-secondary">Vehiculos</h1>
         <div className="d-flex overflow-scroll">
         { store.vehicles.map((element, index)=>{

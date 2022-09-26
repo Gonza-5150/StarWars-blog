@@ -27,15 +27,13 @@ export const Vehicles = () => {
         <div className="card-body">
           <h5 className="card-title">{store.vehicleEach?.name}</h5>
           <p className="card-text newFont">
-          <ul>
+            <ul>
               <li> Fabricante: {store.vehicleEach?.manufacturer} </li>
               <li> Tripulación: {store.vehicleEach?.crew} </li>
               <li>Velocidad: {store.vehicleEach?.max_atmosphering_speed}</li>
               <li>Pasajeros: {store.vehicleEach?.passengers}</li>
             </ul>
           </p>
-          
-          
         </div>
       </div>
     </div>

@@ -7,6 +7,22 @@ const getState = ({ getStore, getActions, setStore }) => {
       favorites: []
     },
     actions: {
+
+      addFav: (item)=> {
+        let aux = getStore().favorites
+        aux.push(item)
+        setStore({ favorites: aux });
+
+      },
+
+      delleteFav: (index)=> {
+        let aux = getStore().favorites
+        let x = aux.filter((element,i)=> i!=index)
+        setStore({ favorites: x });
+
+      },
+
+
       fetchCharacters: async () => {
         await fetch("https://www.swapi.tech/api/people/")
           .then((response) => response.json())
@@ -67,6 +83,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         )
         .catch((err) => console.error(err));
     },
+
 
     },
   };
