@@ -20,7 +20,7 @@ export const Character = () => {
     <div class="d-flex justify-content-center bg-dark">
       <div className="card col-4 mx-1 border-warning bg-secondary shadow-lg">
         <img
-          src={`https://starwars-visualguide.com/assets/img/characters/${params.theid}}.jpg`}
+          src={`https://starwars-visualguide.com/assets/img/characters/${params.theid}.jpg`}
           className="card-img-top"
           alt="..."
         />
