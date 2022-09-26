@@ -17,11 +17,7 @@ export const Navbar = () => {
         </span> 
       </Link>
 
-      <Link className="btn border-dark nav-link link-dark shadow-lg  rounded " to="/characters">Personajes</Link>
-
-      <Link className="btn border-dark nav-link link-dark shadow-lg rounded" to="/planets">Planetas</Link>
-
-      <Link className="btn border-dark nav-link link-dark shadow-lg rounded" to="/vehicles">Vehiculos</Link>
+      <Link className="btn border-dark nav-link link-dark shadow-lg rounded" to="/">Home</Link>
 
       <div className="dropdown ">
         <button
@@ -39,7 +35,7 @@ export const Navbar = () => {
             <a className="dropdown-item" href="#">
               {element.name}
             </a>
-            <button onClick={()=> actions.delleteFav(index)}>borrar</button>
+            <button class="btn btn-outline-danger" onClick={()=> actions.delleteFav(index)}>borrar</button>
           </li>
             )
           })}
