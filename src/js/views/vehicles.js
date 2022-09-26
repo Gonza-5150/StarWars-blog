@@ -18,7 +18,7 @@ export const Vehicles = () => {
 
   return (
     <div class="d-flex justify-content-center bg-dark">
-      <div className="card col-4 border-warning mx-1 bg-secondary shadow-lg">
+      <div className="card mt-3 col-4 border-warning mx-1 bg-secondary shadow-lg">
         <img
           src={`https://starwars-visualguide.com/assets/img/vehicles/${params.theid}.jpg`}
           className="card-img-top"

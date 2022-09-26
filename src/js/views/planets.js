@@ -18,7 +18,7 @@ export const Planets = () => {
 
   return (
     <div class="d-flex justify-content-center bg-dark">
-      <div className="card col-4 border-warning mx-1 bg-secondary shadow-lg opacity-60">
+      <div className="card col-4 mt-3 border-warning mx-1 bg-secondary shadow-lg opacity-60">
         <img
           src={`https://starwars-visualguide.com/assets/img/planets/${params.theid}.jpg`}
           className="card-img-top"
