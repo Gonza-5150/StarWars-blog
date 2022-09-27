@@ -1,7 +1,6 @@
 import "../../styles/home.css";
 import { Card } from "../component/card";
 import { PlanetCard } from "../component/planetCard";
-import { characterCard } from "../component/characterCard";
 import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
 import { VehicleCard } from "../component/vehicleCard";

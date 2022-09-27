@@ -28,14 +28,14 @@ export const Navbar = () => {
         >
           Favorites
         </button>
-        <ul className="dropdown-menu">
+        <ul className="dropdown-menu text-center m-2">
           {store.favorites.map((element, index) =>{
             return(
               <li>
             <a className="dropdown-item" href="#">
               {element.name}
             </a>
-            <button class="btn btn-outline-danger" onClick={()=> actions.delleteFav(index)}>borrar</button>
+            <button class="btn btn-outline-danger opacity-50" onClick={()=> actions.delleteFav(index)}>borrar</button>
           </li>
             )
           })}
