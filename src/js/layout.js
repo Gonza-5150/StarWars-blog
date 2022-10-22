@@ -10,6 +10,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Planets } from "./views/planets";
 import { Vehicles } from "./views/vehicles";
+import { Login } from "./views/login"
 import { element } from "prop-types";
 
 //create your first component
@@ -24,6 +25,9 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
+						<Route exact path="/login">
+							<Login />
+						</Route>
 						<Route exact path="/">
 							<Home />
 						</Route>
