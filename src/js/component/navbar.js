@@ -20,7 +20,7 @@ export const Navbar = () => {
       </Link>
 
       <Link className="btn border-dark nav-link link-dark shadow-lg rounded" to="/">Home</Link>
-
+    
       <button className="btn border-dark nav-link link-dark shadow-lg rounded" onClick={() => {
         //history.push("/login")
         window.location.href = "/login"

@@ -25,7 +25,7 @@ export const Login = () => {
         <div>
           <input type="text" placeholder="email" value={email} onChange={(e) => setEmail(e.target.value)} />
           <input type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-          <button onClick={handleClick}>Login</button>
+          <button className="btn btn-primary border-warning m-3 opacity-50" onClick={handleClick}>Login</button>
         </div>
       )}
     </div>

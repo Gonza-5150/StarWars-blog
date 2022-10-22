@@ -7,7 +7,7 @@ export const VehicleCard = ({ name, uid }) => {
   return (
     <div className="card col-3 border-warning mx-1 bg-secondary shadow-lg">
       <img
-        src={`https://starwars-visualguide.com/assets/img/vehicles/${uid}.jpg`}
+        src={`https://starwars-visualguide.com/assets/img/vehicles/${uid + 3}.jpg`}
         className="card-img-top"
         alt="..."
       />
