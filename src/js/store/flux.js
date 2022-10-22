@@ -25,35 +25,36 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 
       fetchCharacters: async () => {
-        await fetch("https://www.swapi.tech/api/people/")
+        await fetch("https://3000-gonza5150-starwarsbacke-br5uq72f36w.ws-us72.gitpod.io/people")
           .then((response) => response.json())
           .then((data) => {
             return data;
           })
           .then( (data) => {
-              setStore({ characters: data.results });
+
+              setStore({ characters: data });
           })
           .catch((error) => console.log("Error en la solicitud de personajes"));
       },
       fetchPlanets: async () => {
-        await fetch("https://www.swapi.tech/api/planets/")
+        await fetch("https://3000-gonza5150-starwarsbacke-7m2cpmt7b78.ws-us72.gitpod.io/planets")
           .then((response) => response.json())
           .then((data) => {
             return data;
           })
           .then( (data) => {
-            setStore({ planets: data.results });
+            setStore({ planets: data });
         })
         .catch((error) => console.log("Error en la solicitud de planetas"));
     },
       fetchVehicles: async() => {
-        await fetch("https://www.swapi.tech/api/vehicles/")
+        await fetch("https://3000-gonza5150-starwarsbacke-7m2cpmt7b78.ws-us72.gitpod.io/vehicles/")
           .then((response) => response.json())
           .then((data) => {
             return data;
           })
           .then( (data) => {
-            setStore({ vehicles: data.results });
+            setStore({ vehicles: data });
         })
         .catch((error) => console.log("Error en la solicitud de vehiculos"));
     },
