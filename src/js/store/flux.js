@@ -111,7 +111,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         })
       };
       try {
-        const resp = await fetch("https://3000-gonza5150-starwarsbacke-br5uq72f36w.ws-us72.gitpod.io/token", opts)
+        const resp = await fetch("https://3000-gonza5150-starwarsbacke-7m2cpmt7b78.ws-us72.gitpod.io/token", opts)
         if (resp.status !== 200) {
           alert("Sorry, it was an error!!!");
           return false;

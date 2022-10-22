@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
+import { useNavigate } from "react-router";
 
 export const Navbar = () => {
   const { store, actions } = useContext(Context);
+  const history = useHistory()
 
   return (
     <nav className="navbar navbar-light bg-secondary mb-3 border-bottom border-3 border-warning">
@@ -18,6 +20,13 @@ export const Navbar = () => {
       </Link>
 
       <Link className="btn border-dark nav-link link-dark shadow-lg rounded" to="/">Home</Link>
+
+      <button className="btn border-dark nav-link link-dark shadow-lg rounded" onClick={() => {
+        //history.push("/login")
+        window.location.href = "/login"
+
+        sessionStorage.removeItem("token")
+        }}>Logout</button>
 
       <div className="dropdown ">
         <button
