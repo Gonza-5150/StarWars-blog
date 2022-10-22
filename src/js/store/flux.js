@@ -25,7 +25,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 
       fetchCharacters: async () => {
-        await fetch("https://3000-gonza5150-starwarsbacke-br5uq72f36w.ws-us72.gitpod.io/people")
+        await fetch("https://3000-gonza5150-starwarsbacke-7m2cpmt7b78.ws-us72.gitpod.io/people/")
           .then((response) => response.json())
           .then((data) => {
             return data;
@@ -60,28 +60,28 @@ const getState = ({ getStore, getActions, setStore }) => {
     },
 
     eachPlanet: (uid) => {
-      fetch("https://www.swapi.tech/api/planets/" + uid)
+      fetch("https://3000-gonza5150-starwarsbacke-7m2cpmt7b78.ws-us72.gitpod.io/planets/" + uid)
         .then((resp) => resp.json())
         .then((resp) =>
-          setStore({ planetEach: resp.result.properties })
+          setStore({ planetEach: resp })
         )
         .catch((err) => console.error(err));
     },
 
     eachCharacter: (uid) => {
-      fetch("https://www.swapi.tech/api/people/" + uid)
+      fetch("https://3000-gonza5150-starwarsbacke-7m2cpmt7b78.ws-us72.gitpod.io/people/" + uid)
         .then((resp) => resp.json())
         .then((resp) =>
-          setStore({ characterEach: resp.result.properties })
+          setStore({ characterEach: resp })
         )
         .catch((err) => console.error(err));
     },
 
     eachVehicle: (uid) => {
-      fetch("https://www.swapi.tech/api/vehicles/" + uid)
+      fetch("https://3000-gonza5150-starwarsbacke-7m2cpmt7b78.ws-us72.gitpod.io/vehicles/" + uid)
         .then((resp) => resp.json())
         .then((resp) =>
-          setStore({ vehicleEach: resp.result.properties })
+          setStore({ vehicleEach: resp })
         )
         .catch((err) => console.error(err));
     },

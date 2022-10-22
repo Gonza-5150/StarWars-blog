@@ -30,8 +30,8 @@ export const Character = () => {
             <ul>
                 <li>Genero: {store.characterEach?.gender}</li>
                 <li>Color de piel: {store.characterEach?.skin_color}</li>
-                <li>Nacimiento: {store.characterEach?.birth_year}</li>
-                <li>Color de ojos: {store.characterEach?.eye_color}</li>
+                <li>Nacimiento: {store.characterEach?.birth}</li>
+                <li>Color de ojos: {store.characterEach?.eyes_color}</li>
             </ul>
           </p>
         </div>

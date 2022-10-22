@@ -28,9 +28,9 @@ export const Vehicles = () => {
           <h5 className="card-title">{store.vehicleEach?.name}</h5>
           <p className="card-text newFont">
             <ul>
-              <li> Fabricante: {store.vehicleEach?.manufacturer} </li>
-              <li> Tripulación: {store.vehicleEach?.crew} </li>
-              <li>Velocidad: {store.vehicleEach?.max_atmosphering_speed}</li>
+              <li> Fabricante: {store.vehicleEach?.crafter} </li>
+              <li> Tripulación: {store.vehicleEach?.tripulation} </li>
+              <li>Velocidad: {store.vehicleEach?.speed}</li>
               <li>Pasajeros: {store.vehicleEach?.passengers}</li>
             </ul>
           </p>
